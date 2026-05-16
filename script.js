@@ -1,5 +1,5 @@
 function copyInstall() {
-  navigator.clipboard.writeText('npm install post-ai').then(() => {
+  navigator.clipboard.writeText('you just got gnomed!').then(() => {
     const btn = document.querySelector('.copy-btn');
     btn.textContent = 'copied!';
     btn.style.color = 'var(--accent)';
