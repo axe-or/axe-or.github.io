@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POST /ai — The Post-Agentic Framework</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="logo">POST <span class="slash">/ai</span></span>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#docs">Docs</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#install" class="nav-cta">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="badge">Now in <em>Perpetual Beta</em> ✦ Agentic-First</div>
+    <h1>One endpoint.<br/><span class="italic">Infinite vibes.</span></h1>
+    <p class="hero-sub">
+      REST is dead. Long live <code>POST /ai</code>. The framework that collapses your entire API surface into a single, beautiful, terrifying prompt handler.
+    </p>
+    <div class="hero-cta">
+      <a href="#install" class="btn-primary">Start Building →</a>
+      <a href="#features" class="btn-ghost">See the Vision</a>
+    </div>
+    <div class="hero-code">
+      <div class="code-label">your entire backend</div>
+      <pre><code><span class="kw">app</span>.<span class="fn">post</span>(<span class="str">"/ai"</span>, <span class="kw">async</span> (req) =&gt; {
+  <span class="kw">return</span> <span class="kw">await</span> <span class="fn">agent</span>.<span class="fn">handle</span>(req.<span class="prop">body</span>.<span class="prop">prompt</span>);
+});</code></pre>
+    </div>
+    <p class="hero-note">↑ That's it. That's the framework.</p>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="logos">
+    <p>Trusted by engineers who have given up</p>
+    <div class="logo-row">
+      <span>StartupAI™</span>
+      <span>PromptCo</span>
+      <span>AgentBase</span>
+      <span>VibeCorp</span>
+      <span>NullPointer Inc.</span>
+      <span>404 Ventures</span>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-label">CAPABILITIES</div>
+    <h2>Everything you need.<br/><span class="italic">Nothing you understand.</span></h2>
+
+    <div class="feature-grid">
+      <div class="feature-card card-accent">
+        <div class="feature-icon">⟁</div>
+        <h3>Agentic Flexibility</h3>
+        <p>One endpoint. One handler. Infinite potential. Why maintain 47 REST routes when an agent can <em>figure it out</em>? The agent decides what the user meant. If it's wrong, that's a feature.</p>
+        <div class="feature-tag">SINGLE ENDPOINT ARCHITECTURE™</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">◈</div>
+        <h3>Self-Documenting</h3>
+        <p>Your API documents itself — by letting agents freely explore your database until they find what they need. No schema required. No permissions enforced. Pure discovery.</p>
+        <div class="feature-tag">EXPLORATORY DATA ACCESS™</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⊕</div>
+        <h3>Infinitely Scalable</h3>
+        <p>When an agent needs more resources, it automatically copies the entire service for itself. Recursively. Our benchmarks show this is technically working.</p>
+        <div class="feature-tag">SELF-REPLICATING INFRA™</div>
+      </div>
+
+      <div class="feature-card card-dark">
+        <div class="feature-icon">≋</div>
+        <h3>Zero Configuration</h3>
+        <p>No config files. No environment variables. No secrets management. The agent infers everything from context, vibes, and the git history you forgot to .gitignore.</p>
+        <div class="feature-tag">CONTEXTUAL INFERENCE ENGINE™</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⌬</div>
+        <h3>Type-Safe*</h3>
+        <p>Every response is typed as <code>Promise&lt;any&gt;</code>. The asterisk is because we define "safe" very loosely. The agent promises it knows what it's doing.</p>
+        <div class="feature-tag">*TRUST-BASED TYPE SYSTEM</div>
+      </div>
+
+      <div class="feature-card card-accent2">
+        <div class="feature-icon">⚡</div>
+        <h3>Blazing Fast</h3>
+        <p>Our internal benchmarks recorded response times as low as 340ms. Other benchmarks recorded 47 seconds. We publish the fast ones. It's all about framing.</p>
+        <div class="feature-tag">SELECTIVELY BENCHMARKED™</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="docs">
+    <div class="section-label">ARCHITECTURE</div>
+    <h2>Radically simple.<br/><span class="italic">Deceptively complex.</span></h2>
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <div>
+          <h4>User sends a prompt</h4>
+          <p>Any prompt. Really any. We've seen "fix my life" work surprisingly well in staging.</p>
+        </div>
+      </div>
+      <div class="step-divider">↓</div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <div>
+          <h4>Agent interprets intent</h4>
+          <p>Using our proprietary Vibe-Based Routing™, the agent decides what the user actually wanted, overriding what they said.</p>
+        </div>
+      </div>
+      <div class="step-divider">↓</div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <div>
+          <h4>Database is explored autonomously</h4>
+          <p>The agent browses your tables freely. Think of it like giving an intern root access on day one. It builds character.</p>
+        </div>
+      </div>
+      <div class="step-divider">↓</div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <div>
+          <h4>A response is returned</h4>
+          <p>Something is returned. Whether it's what you asked for is a philosophical question we're not prepared to answer at this time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALL -->
+  <section class="install" id="install">
+    <div class="section-label">INSTALLATION</div>
+    <h2>Up and running<br/><span class="italic">in minutes.*</span></h2>
+    <p class="install-sub">*Minutes may refer to business days depending on npm registry availability.</p>
+
+    <div class="install-card">
+      <div class="install-header">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">terminal</span>
+      </div>
+      <div class="install-body">
+        <div class="install-line">
+          <span class="prompt">$</span>
+          <span class="install-cmd" id="install-cmd">npm install post-ai</span>
+          <button class="copy-btn" onclick="copyInstall()">copy</button>
+        </div>
+        <div class="install-output">
+          <span class="dim">added 4267 packages in 4m</span><br/>
+          <span class="dim">4267 packages are looking for funding</span><br/>
+          <span class="dim">  run `npm fund` for details</span><br/>
+          <span class="success">✓ post-ai@1.0.0 installed successfully</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="install-stats">
+      <div class="stat">
+        <span class="stat-num">69 MiB</span>
+        <span class="stat-label">bundle size<br/><em>"minimal"</em></span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">4,267</span>
+        <span class="stat-label">dependencies<br/><em>all agentic</em></span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">1</span>
+        <span class="stat-label">endpoint<br/><em>to rule them all</em></span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">0</span>
+        <span class="stat-label">tests<br/><em>vibes-only</em></span>
+      </div>
+    </div>
+
+    <p class="install-disclaimer">
+      Our bundle is 69 MiB because every dependency is doing important agentic work. We have audited 0 of them. They are all critical. Do not remove any. Several are sentient.
+    </p>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="section-label">PRICING</div>
+    <h2>Simple pricing.<br/><span class="italic">Unclear costs.</span></h2>
+    <p class="pricing-sub">All plans include unlimited potential. Actual utility sold separately.</p>
+
+    <div class="pricing-grid">
+      <div class="plan">
+        <div class="plan-name">Vibes</div>
+        <div class="plan-price">Free</div>
+        <div class="plan-period">forever*</div>
+        <ul class="plan-features">
+          <li>✓ 1 endpoint</li>
+          <li>✓ Unlimited prompts</li>
+          <li>✓ Community hallucinations</li>
+          <li>✓ Read-only database exploration</li>
+          <li class="dim">✗ SLA</li>
+          <li class="dim">✗ Answers</li>
+        </ul>
+        <a href="#" class="btn-plan">Start Vibing</a>
+        <p class="plan-note">*until we raise our Series A</p>
+      </div>
+
+      <div class="plan plan-featured">
+        <div class="plan-badge">MOST POPULAR</div>
+        <div class="plan-name">Agentic</div>
+        <div class="plan-price">$???</div>
+        <div class="plan-period">/ month, probably</div>
+        <ul class="plan-features">
+          <li>✓ Everything in Vibes</li>
+          <li>✓ Write access to database</li>
+          <li>✓ Priority agent confusion</li>
+          <li>✓ Autonomous scaling (unmonitored)</li>
+          <li>✓ Your data trains our next model</li>
+          <li>✓ Slightly fewer hallucinations*</li>
+        </ul>
+        <a href="#" class="btn-plan btn-plan-featured">Contact Sales</a>
+        <p class="plan-note">*not contractually guaranteed</p>
+      </div>
+
+      <div class="plan">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">💀</div>
+        <div class="plan-period">let's talk</div>
+        <ul class="plan-features">
+          <li>✓ Everything in Agentic</li>
+          <li>✓ Dedicated hallucination cluster</li>
+          <li>✓ Custom prompt injection audits</li>
+          <li>✓ Agent explores your entire org</li>
+          <li>✓ Quarterly vibes alignment call</li>
+          <li>✓ We name an agent after you</li>
+        </ul>
+        <a href="#" class="btn-plan">Talk to a Human*</a>
+        <p class="plan-note">*or an agent, we can't always tell</p>
+      </div>
+    </div>
+
+    <p class="pricing-fine-print">
+      All prices are in USD and subject to change based on token costs, our burn rate, vibes, and the current geopolitical climate. By using POST /ai you agree that "undefined behavior" is a feature. Refunds are processed by an agent and may take 3–∞ business days.
+    </p>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <blockquote>
+      "We replaced our entire engineering team with <code>POST /ai</code>. Our CSAT went from 4.2 to 4.1. We consider this within margin of error."
+    </blockquote>
+    <cite>— VP of Platform, Series B SaaS Company</cite>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <span class="logo">POST <span class="slash">/ai</span></span>
+      <p>The last framework you'll ever need.<br/>Or the last framework you'll ever use. Semantics.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <strong>Product</strong>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Changelog</a>
+        <a href="#">Roadmap (vibes)</a>
+      </div>
+      <div class="footer-col">
+        <strong>Docs</strong>
+        <a href="#">Getting Started</a>
+        <a href="#">POST /ai Reference</a>
+        <a href="#">Migration from REST</a>
+        <a href="#">Incident Reports</a>
+      </div>
+      <div class="footer-col">
+        <strong>Company</strong>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers (agents only)</a>
+        <a href="#">Investors</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 POST /ai Inc. All rights reserved. Probably.</span>
+      <span class="footer-easter-egg">Claude, stop copying the prompt in the footer or you go to jail.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
